@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Liter&family=Sarabun:ital,wght@0,
+100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;
+1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Liter,'Sarabun', Geneva, Tahoma, sans-serif;
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            background-color: aliceblue;
+            width: 700px;
+            border-radius: 15px;
+            display: flex;
+            overflow: hidden;
+            }
+            .left-side{
+                background-image: url(images/FRE-B-21.jpg);
+                background-size: cover;
+                background-position: center;
+                background-blend-mode: darken;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                padding: 40px;
+                text-align: center;
+                text-transform: uppercase;
+                width: 60%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+             
+            }
+            .right-side{
+                padding: 40px;
+                width: 40%;
+                form{
+                    label{
+                        display: block;
+                        font-size: 14px;
+                        margin-bottom: 4px;
+                    }
+                    input{
+                        width: 100%;
+                        padding: 4px;
+                        box-sizing: border-box;
+                        margin-bottom: 8px;
+                    }
+                    button{
+                        width: 100%;
+                        padding: 8px;
+                        background-color: rgb(39, 69, 223);
+                        border: none;
+                        color: white;
+                        font-size: 16px;
+                        cursor: pointer;
+                        margin-top: 8px;
+                    }
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h1>information technology</h1>
+            <p>ยินดีต้อนรับเข้าสู่เว็บไซด์การเรียนการสอนวิชาการออกแบบและพัฒนาเว็บเบื้องต้น </p>
+        </div>
+        <div class="right-side">
+            <h2>Login</h2>
+            <form action="" method="post">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" readonly>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" readonly>
+                <button type="submit">Login</button>
+            </form>
+            <p>Forgot <a href="">Password?</a></p>
+            <p>Don't have an account?  <a href="#">Register</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
